@@ -78,6 +78,27 @@ Store.prototype.tableContent = function() {
 for(var k = 0; k < 5; k++){
   stores [k].tableContent();
 }
+// lab-8
+var formEl = document.getElementById('main-form');
+
+function onSubmit(event) {
+  event.preventDefault();
+  console.log('submit event', event.target.id.value);
+  console.log('the form was submitted');
+  var myFormData = {};
+  myFormData.id = event.target.id.value;
+  myFormData.min = event.target.min.value;
+  myFormData.max = event.target.max.value;
+  myFormData.avg = event.target.avg.value;
+
+  console.log('my form data', myFormData);
+  var newStore = new Store (myFormData.id, myFormData.min, myFormData.max, myFormData.avg);
+  newStore.tableContent();
+}
+
+formEl.addEventListener('submit', onSubmit);
+
+
 // var stores = [];
 //
 // var storeHours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm'];
