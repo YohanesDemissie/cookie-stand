@@ -38,12 +38,12 @@ Store.header = function() {
   var trEl = document.createElement('tr');
   thead.appendChild(trEl);
   var tdEl = document.createElement('td');
-  tdEl.setAttribute('style','text-align:center;','border: 1px solid white;');
+  //tdEl.setAttribute('style','text-align:center;','border: 1px solid white;');
   tdEl.textContent = '';
   trEl.appendChild(tdEl);
   for(var i = 0; i <= 15; i++) {
     tdEl = document.createElement('td');
-    tdEl.setAttribute('style','text-align:center;');
+    //tdEl.setAttribute('style','text-align:center;');
     var time = hours[i];
     trEl.setAttribute('style','text-align:center;');
     tdEl.textContent = time;
