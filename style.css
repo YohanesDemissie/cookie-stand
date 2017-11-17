@@ -1,12 +1,29 @@
 html { height: 100%;
-  background-size: cover;
-  background-image: url("http://imgs.abduzeedo.com/files/paul0v2/sunset/sun-08.jpg");
+background-size: cover;
+/*background-image: url("http://imgs.abduzeedo.com/files/paul0v2/sunset/sun-08.jpg");*/
 background-position: center;
 background-repeat: no-repeat;
+background-color: yellow;
 }
-
-h1 {color:red;}
-h3 {color: red;}
-h5 {color: white;}
-p {color: white;}
-footer {color: white;}
+h1 {
+color: red;
+}
+h4 {
+color: black;
+font-style: italic;
+}
+thead {
+  background-color: red;
+}
+p
+{
+color:;
+text-align: center;
+}
+footer {
+color: white;
+}
+img {margin-left: 30px;
+  float: center;
+  max-width: 300px;
+}
